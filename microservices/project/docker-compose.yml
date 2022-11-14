@@ -51,7 +51,7 @@ services:
     volumes:
       - ./db-data/postgres/:/var/lib/postgresql/data/
 
-  mongo: 
+  mongo:
     image: 'mongo:4.2.16-bionic'
     ports:
       - "27017:27017"
@@ -61,4 +61,3 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./db-data/mongo/:/data/db
-      
